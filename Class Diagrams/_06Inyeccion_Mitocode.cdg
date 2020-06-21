@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="Barcelona" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="24.0" yPosition="277.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="802.0" yPosition="64.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Messi" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="480.0" yPosition="45.0">
+      <Fields>
+        <Field name="equipo" type="IEquipo" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="IEquipo" name="equipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarEquipo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Milan" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="246.0" yPosition="277.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="IEquipo" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="128.0" yPosition="70.0">
+      <Methods>
+        <Method name="mostrar" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="equipo" source="com._06Inyeccion_Mitocode.Messi" target="com._06Inyeccion_Mitocode.IEquipo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="messi" source="com._06Inyeccion_Mitocode.Main" target="com._06Inyeccion_Mitocode.Messi" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._06Inyeccion_Mitocode.Milan" target="com._06Inyeccion_Mitocode.IEquipo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._06Inyeccion_Mitocode.Barcelona" target="com._06Inyeccion_Mitocode.IEquipo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

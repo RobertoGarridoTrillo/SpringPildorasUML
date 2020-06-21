@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="Director" package="com._05PrimerXML" visibility="public" xPosition="76.0" yPosition="234.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Jefe" package="com._05PrimerXML" visibility="public" xPosition="353.0" yPosition="234.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Secretario" package="com._05PrimerXML" visibility="public" xPosition="631.0" yPosition="234.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Usoempleados" package="com._05PrimerXML" visibility="public" xPosition="696.0" yPosition="14.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="IEmpleados" package="com._05PrimerXML" visibility="public" xPosition="365.0" yPosition="20.0">
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._05PrimerXML.Secretario" target="com._05PrimerXML.IEmpleados"/>
+    <UseRelation name="roberto" source="com._05PrimerXML.Usoempleados" target="com._05PrimerXML.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._05PrimerXML.Jefe" target="com._05PrimerXML.IEmpleados"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._05PrimerXML.Director" target="com._05PrimerXML.IEmpleados"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
