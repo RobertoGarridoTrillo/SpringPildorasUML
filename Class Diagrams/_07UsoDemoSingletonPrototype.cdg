@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="PrimerInforme" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="61.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getinforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Secretario" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="529.0" yPosition="254.0">
+      <Fields>
+        <Field name="informeNuevo" type="ICreacionInformes" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ICreacionInformes" name="PrimerInforme"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SegundoInforme" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="302.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getinforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsoDemoSingletonPrototype" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="569.0" yPosition="617.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICreacionInformes" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="194.0" yPosition="279.0">
+      <Methods>
+        <Method name="getinforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IEmpleados" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="591.0" yPosition="462.0">
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._07UsoDemoSingletonPrototype.PrimerInforme" target="com._07UsoDemoSingletonPrototype.ICreacionInformes"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._07UsoDemoSingletonPrototype.Secretario" target="com._07UsoDemoSingletonPrototype.IEmpleados"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._07UsoDemoSingletonPrototype.SegundoInforme" target="com._07UsoDemoSingletonPrototype.ICreacionInformes"/>
+    <HasRelation name="informeNuevo" source="com._07UsoDemoSingletonPrototype.Secretario" target="com._07UsoDemoSingletonPrototype.ICreacionInformes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="com._07UsoDemoSingletonPrototype.UsoDemoSingletonPrototype" target="com._07UsoDemoSingletonPrototype.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

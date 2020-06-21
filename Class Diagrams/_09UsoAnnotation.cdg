@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="Comercial" package="com._09UsoAnnotation" visibility="public" xPosition="258.0" yPosition="315.0">
+      <Fields>
+        <Field name="nuevoInforme" type="ICrearInforme" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ICrearInforme" name="nuevoInforme"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Informe" package="com._09UsoAnnotation" visibility="public" xPosition="36.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsoAnnotations" package="com._09UsoAnnotation" visibility="public" xPosition="614.0" yPosition="40.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICrearInforme" package="com._09UsoAnnotation" visibility="public" xPosition="305.0" yPosition="20.0">
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IEmpleados" package="com._09UsoAnnotation" visibility="public" xPosition="631.0" yPosition="339.0">
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="nuevoInforme" source="com._09UsoAnnotation.Comercial" target="com._09UsoAnnotation.ICrearInforme" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._09UsoAnnotation.Informe" target="com._09UsoAnnotation.ICrearInforme"/>
+    <UseRelation name="" source="com._09UsoAnnotation.UsoAnnotations" target="com._09UsoAnnotation.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._09UsoAnnotation.Comercial" target="com._09UsoAnnotation.IEmpleados"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

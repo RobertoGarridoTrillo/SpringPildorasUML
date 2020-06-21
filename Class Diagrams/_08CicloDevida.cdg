@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="PrimerInforme" package="com._08CicloDevida" visibility="public" xPosition="322.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getinforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Secretario" package="com._08CicloDevida" visibility="public" xPosition="103.0" yPosition="370.0">
+      <Fields>
+        <Field name="informeNuevo" type="ICreacionInformes" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ICreacionInformes" name="informeNuevo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+        <Method name="init" returnType="void" visibility="public"/>
+        <Method name="destroy" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SegundoInforme" package="com._08CicloDevida" visibility="public" xPosition="6.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getinforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsoDemoSingletonPrototype" package="com._08CicloDevida" visibility="public" xPosition="833.0" yPosition="408.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICreacionInformes" package="com._08CicloDevida" visibility="public" xPosition="164.0" yPosition="171.0">
+      <Methods>
+        <Method name="getinforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IEmpleados" package="com._08CicloDevida" visibility="public" xPosition="550.0" yPosition="414.0">
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._08CicloDevida.Secretario" target="com._08CicloDevida.IEmpleados"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._08CicloDevida.PrimerInforme" target="com._08CicloDevida.ICreacionInformes"/>
+    <UseRelation name="" source="com._08CicloDevida.UsoDemoSingletonPrototype" target="com._08CicloDevida.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._08CicloDevida.SegundoInforme" target="com._08CicloDevida.ICreacionInformes"/>
+    <HasRelation name="informeNuevo" source="com._08CicloDevida.Secretario" target="com._08CicloDevida.ICreacionInformes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
