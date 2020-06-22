@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="Comercial" package="com._15PostConstructPreDestroy" visibility="public" xPosition="168.0" yPosition="360.0">
+      <Fields>
+        <Field name="nuevoInforme" type="ICrearInforme" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setNuevoInforme" returnType="void" visibility="public">
+          <Argument type="ICrearInforme" name="nuevoInforme"/>
+        </Method>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+        <Method name="ejecutadespuesCreacion" returnType="void" visibility="public"/>
+        <Method name="ejecutaAntesDestruccion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Informe1" package="com._15PostConstructPreDestroy" visibility="public" xPosition="72.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Informe2" package="com._15PostConstructPreDestroy" visibility="public" xPosition="325.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsoAnnotations" package="com._15PostConstructPreDestroy" visibility="public" xPosition="778.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICrearInforme" package="com._15PostConstructPreDestroy" visibility="public" xPosition="201.0" yPosition="190.0">
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IEmpleados" package="com._15PostConstructPreDestroy" visibility="public" xPosition="579.0" yPosition="190.0">
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._15PostConstructPreDestroy.Informe2" target="com._15PostConstructPreDestroy.ICrearInforme"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._15PostConstructPreDestroy.Informe1" target="com._15PostConstructPreDestroy.ICrearInforme"/>
+    <UseRelation source="com._15PostConstructPreDestroy.Comercial" target="com._15PostConstructPreDestroy.ICrearInforme" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nuevoInforme" source="com._15PostConstructPreDestroy.Comercial" target="com._15PostConstructPreDestroy.ICrearInforme" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="com._15PostConstructPreDestroy.UsoAnnotations" target="com._15PostConstructPreDestroy.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._15PostConstructPreDestroy.Comercial" target="com._15PostConstructPreDestroy.IEmpleados"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

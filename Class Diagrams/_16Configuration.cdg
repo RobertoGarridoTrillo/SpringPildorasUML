@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="ArchivoConfig" package="com._16Configuration" visibility="public" xPosition="818.0" yPosition="122.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ClaseA" package="com._16Configuration" visibility="public" xPosition="236.0" yPosition="343.0">
+      <Fields>
+        <Field name="interfaceB" type="InterfaceB" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="metodoInterfaceA" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ClaseB" package="com._16Configuration" visibility="public" xPosition="235.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="metodoInterfaceB" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Uso" package="com._16Configuration" visibility="public" xPosition="801.0" yPosition="352.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="InterfaceA" package="com._16Configuration" visibility="public" xPosition="520.0" yPosition="358.0">
+      <Methods>
+        <Method name="metodoInterfaceA" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="InterfaceB" package="com._16Configuration" visibility="public" xPosition="235.0" yPosition="179.0">
+      <Methods>
+        <Method name="metodoInterfaceB" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="com._16Configuration.Uso" target="com._16Configuration.ArchivoConfig" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._16Configuration.ClaseA" target="com._16Configuration.InterfaceA"/>
+    <HasRelation name="interfaceB" source="com._16Configuration.ClaseA" target="com._16Configuration.InterfaceB" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._16Configuration.ClaseB" target="com._16Configuration.InterfaceB"/>
+    <UseRelation name="" source="com._16Configuration.Uso" target="com._16Configuration.InterfaceA" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

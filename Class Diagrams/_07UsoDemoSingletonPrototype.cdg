@@ -2,7 +2,7 @@
 
 <ClassDiagram name="SpringPildoras">
   <ClassDiagramComponents>
-    <Class name="PrimerInforme" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="61.0" yPosition="20.0">
+    <Class name="PrimerInforme" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="58.0" yPosition="539.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -22,7 +22,7 @@
         <Method name="getInforme" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="SegundoInforme" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="302.0" yPosition="20.0">
+    <Class name="SegundoInforme" package="com._07UsoDemoSingletonPrototype" visibility="public" xPosition="327.0" yPosition="539.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -52,8 +52,8 @@
   <ClassDiagramRelations>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._07UsoDemoSingletonPrototype.PrimerInforme" target="com._07UsoDemoSingletonPrototype.ICreacionInformes"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._07UsoDemoSingletonPrototype.Secretario" target="com._07UsoDemoSingletonPrototype.IEmpleados"/>
+    <UseRelation name="" source="com._07UsoDemoSingletonPrototype.UsoDemoSingletonPrototype" target="com._07UsoDemoSingletonPrototype.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._07UsoDemoSingletonPrototype.SegundoInforme" target="com._07UsoDemoSingletonPrototype.ICreacionInformes"/>
     <HasRelation name="informeNuevo" source="com._07UsoDemoSingletonPrototype.Secretario" target="com._07UsoDemoSingletonPrototype.ICreacionInformes" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="" source="com._07UsoDemoSingletonPrototype.UsoDemoSingletonPrototype" target="com._07UsoDemoSingletonPrototype.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

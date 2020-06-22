@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="Comercial" package="com._14AutowireSingleton" visibility="public" xPosition="102.0" yPosition="454.0">
+      <Fields>
+        <Field name="nuevoInforme" type="ICrearInforme" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setNuevoInforme" returnType="void" visibility="public">
+          <Argument type="ICrearInforme" name="nuevoInforme"/>
+        </Method>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Informe1" package="com._14AutowireSingleton" visibility="public" xPosition="29.0" yPosition="24.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Informe2" package="com._14AutowireSingleton" visibility="public" xPosition="237.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsoAnnotations" package="com._14AutowireSingleton" visibility="public" xPosition="520.0" yPosition="501.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICrearInforme" package="com._14AutowireSingleton" visibility="public" xPosition="138.0" yPosition="225.0">
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IEmpleados" package="com._14AutowireSingleton" visibility="public" xPosition="417.0" yPosition="265.0">
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com._14AutowireSingleton.Comercial" target="com._14AutowireSingleton.ICrearInforme" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._14AutowireSingleton.Informe1" target="com._14AutowireSingleton.ICrearInforme"/>
+    <UseRelation name="" source="com._14AutowireSingleton.UsoAnnotations" target="com._14AutowireSingleton.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._14AutowireSingleton.Informe2" target="com._14AutowireSingleton.ICrearInforme"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._14AutowireSingleton.Comercial" target="com._14AutowireSingleton.IEmpleados"/>
+    <HasRelation name="nuevoInforme" source="com._14AutowireSingleton.Comercial" target="com._14AutowireSingleton.ICrearInforme" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

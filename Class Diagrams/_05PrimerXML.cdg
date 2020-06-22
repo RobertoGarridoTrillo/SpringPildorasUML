@@ -32,7 +32,7 @@
         </Method>
       </Methods>
     </Class>
-    <Interface name="IEmpleados" package="com._05PrimerXML" visibility="public" xPosition="365.0" yPosition="20.0">
+    <Interface name="IEmpleados" package="com._05PrimerXML" visibility="public" xPosition="353.0" yPosition="20.0">
       <Methods>
         <Method name="getTareas" returnType="String" visibility="public"/>
       </Methods>

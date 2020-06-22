@@ -2,14 +2,14 @@
 
 <ClassDiagram name="SpringPildoras">
   <ClassDiagramComponents>
-    <Class name="Barcelona" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="24.0" yPosition="277.0">
+    <Class name="Barcelona" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="28.0" yPosition="26.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="mostrar" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Main" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="802.0" yPosition="64.0">
+    <Class name="Main" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="720.0" yPosition="122.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -18,7 +18,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Messi" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="480.0" yPosition="45.0">
+    <Class name="Messi" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="468.0" yPosition="103.0">
       <Fields>
         <Field name="equipo" type="IEquipo" visibility="private"/>
       </Fields>
@@ -31,14 +31,14 @@
         <Method name="mostrarEquipo" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Milan" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="246.0" yPosition="277.0">
+    <Class name="Milan" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="28.0" yPosition="192.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="mostrar" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Interface name="IEquipo" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="128.0" yPosition="70.0">
+    <Interface name="IEquipo" package="com._06Inyeccion_Mitocode" visibility="public" xPosition="249.0" yPosition="128.0">
       <Methods>
         <Method name="mostrar" returnType="void" visibility="public"/>
       </Methods>
@@ -46,8 +46,8 @@
   </ClassDiagramComponents>
   <ClassDiagramRelations>
     <HasRelation name="equipo" source="com._06Inyeccion_Mitocode.Messi" target="com._06Inyeccion_Mitocode.IEquipo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation name="messi" source="com._06Inyeccion_Mitocode.Main" target="com._06Inyeccion_Mitocode.Messi" sourceCardinality="1..1" targetCardinality="1..1"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._06Inyeccion_Mitocode.Milan" target="com._06Inyeccion_Mitocode.IEquipo"/>
+    <UseRelation name="messi" source="com._06Inyeccion_Mitocode.Main" target="com._06Inyeccion_Mitocode.Messi" sourceCardinality="1..1" targetCardinality="1..1"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._06Inyeccion_Mitocode.Barcelona" target="com._06Inyeccion_Mitocode.IEquipo"/>
   </ClassDiagramRelations>
 </ClassDiagram>

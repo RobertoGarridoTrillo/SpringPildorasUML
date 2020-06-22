@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="ArchivoConfig" package="com._17Bean" visibility="public" xPosition="225.0" yPosition="564.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="claseD" returnType="ClaseD" visibility="public"/>
+        <Method name="claseC" returnType="ClaseC" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ClaseC" package="com._17Bean" visibility="public" xPosition="358.0" yPosition="279.0">
+      <Fields>
+        <Field name="interfaceD" type="InterfaceD" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="InterfaceD" name="interfaceD"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="metodoInterfaceC" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ClaseD" package="com._17Bean" visibility="public" xPosition="98.0" yPosition="298.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="metodoInterfaceD" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Uso" package="com._17Bean" visibility="public" xPosition="557.0" yPosition="573.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="InterfaceC" package="com._17Bean" visibility="public" xPosition="485.0" yPosition="86.0">
+      <Methods>
+        <Method name="metodoInterfaceC" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="InterfaceD" package="com._17Bean" visibility="public" xPosition="183.0" yPosition="86.0">
+      <Methods>
+        <Method name="metodoInterfaceD" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._17Bean.ClaseD" target="com._17Bean.InterfaceD"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._17Bean.ClaseC" target="com._17Bean.InterfaceC"/>
+    <UseRelation source="com._17Bean.ArchivoConfig" target="com._17Bean.ClaseC" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com._17Bean.ArchivoConfig" target="com._17Bean.ClaseD" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="com._17Bean.Uso" target="com._17Bean.InterfaceC" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="interfaceD" source="com._17Bean.ClaseC" target="com._17Bean.InterfaceD" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

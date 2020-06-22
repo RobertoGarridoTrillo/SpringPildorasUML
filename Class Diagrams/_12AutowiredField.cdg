@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SpringPildoras">
+  <ClassDiagramComponents>
+    <Class name="Comercial" package="com._12AutowiredField" visibility="public" xPosition="98.0" yPosition="480.0">
+      <Fields>
+        <Field name="nuevoInforme" type="ICrearInforme" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setNuevoInforme" returnType="void" visibility="public">
+          <Argument type="ICrearInforme" name="nuevoInforme"/>
+        </Method>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Informe1" package="com._12AutowiredField" visibility="public" xPosition="398.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsoAnnotations" package="com._12AutowiredField" visibility="public" xPosition="520.0" yPosition="211.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICrearInforme" package="com._12AutowiredField" visibility="public" xPosition="98.0" yPosition="20.0">
+      <Methods>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="IEmpleados" package="com._12AutowiredField" visibility="public" xPosition="315.0" yPosition="313.0">
+      <Methods>
+        <Method name="getTareas" returnType="String" visibility="public"/>
+        <Method name="getInforme" returnType="String" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._12AutowiredField.Comercial" target="com._12AutowiredField.IEmpleados"/>
+    <HasRelation name="nuevoInforme" source="com._12AutowiredField.Comercial" target="com._12AutowiredField.ICrearInforme" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._12AutowiredField.Informe1" target="com._12AutowiredField.ICrearInforme"/>
+    <UseRelation name="" source="com._12AutowiredField.UsoAnnotations" target="com._12AutowiredField.IEmpleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com._12AutowiredField.Comercial" target="com._12AutowiredField.ICrearInforme" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

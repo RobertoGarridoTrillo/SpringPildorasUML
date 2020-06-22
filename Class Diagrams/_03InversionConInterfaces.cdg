@@ -16,7 +16,7 @@
         <Method name="getTareas" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Usoempleados" package="com._03InversionConInterfaces" visibility="public" xPosition="542.0" yPosition="33.0">
+    <Class name="Usoempleados" package="com._03InversionConInterfaces" visibility="public" xPosition="479.0" yPosition="38.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -32,8 +32,8 @@
     </Interface>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._03InversionConInterfaces.Secretario" target="com._03InversionConInterfaces.Empleados"/>
-    <UseRelation name="empleado" source="com._03InversionConInterfaces.Usoempleados" target="com._03InversionConInterfaces.Empleados" sourceCardinality="1..1" targetCardinality="1..1"/>
     <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._03InversionConInterfaces.Jefe" target="com._03InversionConInterfaces.Empleados"/>
+    <UseRelation name="empleado" source="com._03InversionConInterfaces.Usoempleados" target="com._03InversionConInterfaces.Empleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com._03InversionConInterfaces.Secretario" target="com._03InversionConInterfaces.Empleados"/>
   </ClassDiagramRelations>
 </ClassDiagram>
